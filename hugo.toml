@@ -5,6 +5,7 @@ defaultContentLanguage = "en"
 enableRobotsTXT = false
 
 
+
 [languages]
   [languages.en]
     title = "Alberto Trigo"
@@ -22,7 +23,6 @@ enableRobotsTXT = false
   favicon = "images/favicon.png"
 
   math = true
-  katex = false
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
   # about previews, see https://gohugo.io/templates/internal#twitter-cards and
@@ -52,7 +52,7 @@ enableRobotsTXT = false
   # for posts that don't have `images` defined in their front matter; By setting
   # `geneateSocialCard` to false, you an prevent this behavior. For more
   # information see layouts/partials/social_card.html
-  generateSocialCard = true
+  generateSocialCard = false
 
   [params.author]
     name = "Alberto Trigo Medina" # Your name as shown in the RSS feed metadata
@@ -61,8 +61,8 @@ enableRobotsTXT = false
 
 
 [markup]
-  [highlight]
-    noClasses = false
+  [markup.highlight]
+    noClasses = false 
   [markup.goldmark]
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]

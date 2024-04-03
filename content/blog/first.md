@@ -1,8 +1,7 @@
 +++
-author = "Alberto"
-title = "First"
+author = "Alberto Trigo"
+title = "Exploring Learning and Accountability"
 date = "2024-03-31"
-description = "Guide to emoji usage in Hugo"
 +++
 
 
@@ -26,11 +25,3 @@ Finally, I list some of the books I have been reading this week:
 - A concise introduction to Logic
 - Designing Machine Learning Systems
 - Fundamentals Of Probability
-
-```cpp
-int main(){
-  a = 1;
-  b = 2;
-  c = 1 + 2;
-  return 0;
-}

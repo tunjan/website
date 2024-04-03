@@ -1,4 +1,5 @@
 +++
+author = "Alberto Trigo"
 title = 'Electric field inside a sphere'
 date = 2024-04-02T19:41:22+02:00
 draft = false
@@ -6,7 +7,6 @@ katex = true
 +++
 
 Problem : A thick spherical shell carries charge density: $$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$ Find the electric field in the following three regions: $$(i)\ r < a \quad (ii)\ a < r < b \quad (iii)\ r > b$$
-
 
 Solution: It is the case that a spherical surface is symmetrical on any axis, therefore Gauss' law will be used. $$\oint_{S} \vec{E}\cdot d\vec{a}=\frac{Q_{\mathrm{enc}}}{\varepsilon_0}$$
 
@@ -27,5 +27,3 @@ $$ |E|4\pi r^2 =  \frac{4\pi k}{\epsilon_{0}}  (r - a) \hat{r} $$
 Which simplifies to:
 
 $$ \vec{E}= \frac{k}{\epsilon_{0}} \left(\frac{r-a}{r^2}\right) \hat{r}.  \qquad \square$$
-
-

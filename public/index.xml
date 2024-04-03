@@ -9,25 +9,49 @@
     <managingEditor>trigo@inventati.org (Alberto Trigo Medina)</managingEditor>
     <webMaster>trigo@inventati.org (Alberto Trigo Medina)</webMaster>
     <copyright>Alberto Trigo (CC BY 4.0)</copyright>
-    <lastBuildDate>Tue, 02 Apr 2024 19:41:22 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2024 10:34:34 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/blog/test/</link>
+      <pubDate>Wed, 03 Apr 2024 10:34:34 +0200</pubDate><author>trigo@inventati.org (Alberto Trigo Medina)</author>
+      <guid>http://localhost:1313/blog/test/</guid>
+      <description>Firsto asdasdasdasdasdasdasdasdasd&#xA;Secondo asdasdasdasd&#xA;Third asdasdasdasdasd&#xA;Firsttwo asdasdasdasd</description>
+      <content:encoded><![CDATA[<h1 id="firsto">Firsto</h1>
+<p>asdasdasdasdasdasdasdasdasd</p>
+<h2 id="secondo">Secondo</h2>
+<p>asdasdasdasd</p>
+<h3 id="third">Third</h3>
+<p>asdasdasdasdasd</p>
+<h1 id="firsttwo">Firsttwo</h1>
+<p>asdasdasdasd</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Electric field inside a sphere</title>
       <link>http://localhost:1313/blog/problem2_15/</link>
       <pubDate>Tue, 02 Apr 2024 19:41:22 +0200</pubDate><author>trigo@inventati.org (Alberto Trigo Medina)</author>
       <guid>http://localhost:1313/blog/problem2_15/</guid>
-      <description>Problem : A thick spherical shell carries charge density: $$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$ Find the electric field in the following three regions: $$(i)\ r &amp;lt; a \quad (ii)\ a &amp;lt; r &amp;lt; b \quad (iii)\ r &amp;gt; b$$&#xA;Solution: It is the case that a spherical surface is symmetrical on any axis, therefore Gauss&amp;rsquo; law will be used. $$\oint_{S} \vec{E}\cdot d\vec{a}=\frac{Q_{\mathrm{enc}}}{\varepsilon_0}$$&#xA;$(i)$ The density in this part of the sphere is $0$, therefore $Q_{\mathrm{enc}} = 0$ and the electric field $\vec{E} = 0$</description>
-      <content:encoded><![CDATA[<p>Problem : A thick spherical shell carries charge density: $$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$ Find the electric field in the following three regions: $$(i)\ r &lt; a \quad (ii)\ a &lt; r &lt; b \quad (iii)\ r &gt; b$$</p>
-<p>Solution: It is the case that a spherical surface is symmetrical on any axis, therefore Gauss&rsquo; law will be used. $$\oint_{S} \vec{E}\cdot d\vec{a}=\frac{Q_{\mathrm{enc}}}{\varepsilon_0}$$</p>
-<p>$(i)$ The density in this part of the sphere is $0$, therefore $Q_{\mathrm{enc}} = 0$ and the electric field $\vec{E} = 0$</p>
-<p>$(ii)$ In this case, the only part that contributes to the electric field is the volume in the section $ (a &lt; r &lt; b) $. The dot product of the electric field vector with the surface vector is parallel and constant over the whole surface, therefore it can be rewritten as $$ \oint_{S} |{E}|\ d\vec{a} = |E| \oint_{S} d\vec{a} = |E|4\pi r^2$$</p>
-<p>As for the total enclosed charge, it is obvious that $ \mathrm{d}q = \rho\ \mathrm{d}\tau$ and therefore $$ Q_{\mathrm{enc}} = \frac{1}{\epsilon_{0}} \int \rho\ \mathrm{d} \tau $$</p>
-<p>Let us define the $ \mathrm{d}\tau $ factor in spherical coordinates as $$ d\tau = r^2 \sin {\theta}\ dr\ d\phi\ d\theta $$</p>
-<p>Then $$ Q_{\mathrm{enc}} =  \int_{a}^{r} \frac{k}{r^2}\ r^2 \sin {\theta}\ dr\ d\phi\ d\theta = 4\pi k \int_{a}^{r} dr = 4\pi k  (r - a) \hat{r} $$</p>
+      <description>Problem : A thick spherical shell carries charge density: $$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$ Find the electric field in the following three regions: $$(i)\ r &lt; a \quad (ii)\ a &lt; r &lt; b \quad (iii)\ r &gt; b$$ Solution: It is the case that a spherical surface is symmetrical on any axis, therefore Gauss&amp;rsquo; law will be used. $$\oint_{S} \vec{E}\cdot d\vec{a}=\frac{Q_{\mathrm{enc}}}{\varepsilon_0}$$ \((i)\) The density in this part of the sphere is \(0\), therefore \(Q_{\mathrm{enc}} = 0\) and the electric field \(\vec{E} = 0\)</description>
+      <content:encoded><![CDATA[<p>Problem : A thick spherical shell carries charge density: </p>
+$$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$
+<p> Find the electric field in the following three regions: </p>
+$$(i)\ r < a \quad (ii)\ a < r < b \quad (iii)\ r > b$$
+<p>Solution: It is the case that a spherical surface is symmetrical on any axis, therefore Gauss&rsquo; law will be used. </p>
+$$\oint_{S} \vec{E}\cdot d\vec{a}=\frac{Q_{\mathrm{enc}}}{\varepsilon_0}$$
+<p>\((i)\) The density in this part of the sphere is \(0\), therefore \(Q_{\mathrm{enc}} = 0\) and the electric field \(\vec{E} = 0\)</p>
+<p>\((ii)\) In this case, the only part that contributes to the electric field is the volume in the section $ (a &lt; r &lt; b) . The dot product of the electric field vector with the surface vector is parallel and constant over the whole surface, therefore it can be rewritten as </p>
+$$ \oint_{S} |{E}|\ d\vec{a} = |E| \oint_{S} d\vec{a} = |E|4\pi r^2$$
+<p>As for the total enclosed charge, it is obvious that \( \mathrm{d}q = \rho\ \mathrm{d}\tau\) and therefore </p>
+$$ Q_{\mathrm{enc}} = \frac{1}{\epsilon_{0}} \int \rho\ \mathrm{d} \tau $$
+<p>Let us define the \(\mathrm{d}\tau\) factor in spherical coordinates as </p>
+$$ d\tau = r^2 \sin {\theta}\ dr\ d\phi\ d\theta $$
+<p>Then </p>
+$$ Q_{\mathrm{enc}} =  \int_{a}^{r} \frac{k}{r^2}\ r^2 \sin {\theta}\ dr\ d\phi\ d\theta = 4\pi k \int_{a}^{r} dr = 4\pi k  (r - a) \hat{r} $$
 <p>And the resulting equations is:</p>
-<p>$$ |E|4\pi r^2 =  \frac{4\pi k}{\epsilon_{0}}  (r - a) \hat{r} $$</p>
+$$ |E|4\pi r^2 =  \frac{4\pi k}{\epsilon_{0}}  (r - a) \hat{r} $$
 <p>Which simplifies to:</p>
-<p>$$ \vec{E}= \frac{k}{\epsilon_{0}} \left(\frac{r-a}{r^2}\right) \hat{r}.  \qquad \square$$</p>
+$$ \vec{E}= \frac{k}{\epsilon_{0}} \left(\frac{r-a}{r^2}\right) \hat{r}.  \qquad \square$$
 ]]></content:encoded>
     </item>
     <item>
@@ -57,12 +81,12 @@ probability, because I have studied it intermittently and not deeply enough, I h
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">  <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  b <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>  c <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>]]></content:encoded>
     </item>
   </channel>
 </rss>

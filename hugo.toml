@@ -3,7 +3,7 @@ theme = "hugo-bearcub"
 copyright = "Alberto Trigo (CC BY 4.0)"
 defaultContentLanguage = "en"
 enableRobotsTXT = false
-markup.highlight.noClasses=false
+
 
 [languages]
   [languages.en]
@@ -20,7 +20,9 @@ markup.highlight.noClasses=false
 
   # The path to your favicon
   favicon = "images/favicon.png"
-  katex = true
+
+  math = true
+  katex = false
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
   # about previews, see https://gohugo.io/templates/internal#twitter-cards and
@@ -55,3 +57,17 @@ markup.highlight.noClasses=false
   [params.author]
     name = "Alberto Trigo Medina" # Your name as shown in the RSS feed metadata
     email = "trigo@inventati.org"
+
+
+
+[markup]
+  [highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+

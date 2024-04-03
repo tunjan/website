@@ -1,2 +1,4 @@
-{{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
 <link rel="me" href="https://mathstodon.xyz/@tunjan" />
+{{ if .Param "math" }}
+  {{ partialCached "mathjax.html" . }}
+{{ end }}

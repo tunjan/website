@@ -200,3 +200,49 @@ figcaption > p {
   text-align: center;
   font-style: italic;
 }
+
+.article-toc {
+  display: none;
+  position: fixed;
+  right: 10em;
+  top: 5em;
+  width: 20em;
+  padding: 10px;
+  font-size: 0.9em;
+  max-height: 85%;
+  margin-top: 5em;
+}
+
+.article-toc .toc-wrapper{
+    position: fixed;
+}
+.article-toc nav {
+    margin-left: 1em;
+}
+.article-toc h4 {
+    margin-left: 0;
+}
+.article-toc ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+.article-toc li {
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+.article-toc li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.article-toc li.active {
+    font-weight: bold;
+}
+.article-toc li.inactive {
+    font-weight: 300;
+}
+@media screen and (min-width: 100em) {
+    .article-toc {
+        display: block;
+    }
+  }

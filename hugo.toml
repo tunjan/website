@@ -3,6 +3,7 @@ theme = "hugo-bearcub"
 copyright = "Alberto Trigo (CC BY 4.0)"
 defaultContentLanguage = "en"
 enableRobotsTXT = false
+markup.highlight.noClasses=false
 
 [languages]
   [languages.en]
@@ -47,7 +48,7 @@ enableRobotsTXT = false
 
   # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
   # for posts that don't have `images` defined in their front matter; By setting
-  # `generateSocialCard` to false, you can prevent this behavior. For more
+  # `geneateSocialCard` to false, you an prevent this behavior. For more
   # information see layouts/partials/social_card.html
   generateSocialCard = true
 

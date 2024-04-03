@@ -11,7 +11,7 @@ body {
   background: var(--color-dark);
   color: var(--color-light);
   padding: 4rem;
-  font-family: "IBM Plex Serif", Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic',
+  font-family: "IBM Plex Sans", Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic',
     source-sans-pro, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   font-size: calc(var(--size) * 1.8);
@@ -137,10 +137,10 @@ p.byline {
 }
 
 code {
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro',
+  font-family:"IBM Plex Mono", ui-monospace, 'Cascadia Code', 'Source Code Pro',
     Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   padding: 2px calc(var(--spacing) / 4);
-  background-color: #282a36;
+  background-color: #FAF9F6;
   font-size: calc(var(--size) * 1.4);
 }
 pre code {

@@ -1,7 +1,17 @@
 baseURL = 'https://tunjan.site/'
-languageCode = 'en-us'
-title = 'Tunjan'
 theme = "hugo-bearcub"
+copyright = "Alberto Trigo (CC BY 4.0)"
+defaultContentLanguage = "en"
+enableRobotsTXT = false
+
+[languages]
+  [languages.en]
+    title = "Alberto Trigo"
+    languageName = "en-US"
+    LanguageCode = "en-US"
+    contentDir = "content"
+    [languages.en.params]
+      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
   # The description of your website
@@ -18,11 +28,11 @@ theme = "hugo-bearcub"
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Tunjan"
+  title = "Alberto Trigo"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
-  dateFormat = "2006-01-02"
+  dateFormat = "02-01-2006"
 
   # If your blog is multilingual but you haven't translated a page, this theme
   # will create a disabled link. By setting `hideUntranslated` to true, you can
@@ -40,3 +50,7 @@ theme = "hugo-bearcub"
   # `generateSocialCard` to false, you can prevent this behavior. For more
   # information see layouts/partials/social_card.html
   generateSocialCard = true
+
+  [params.author]
+    name = "Alberto Trigo Medina" # Your name as shown in the RSS feed metadata
+    email = "trigo@inventati.org"

@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tunjan</title>
+    <title>Alberto Trigo</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Tunjan</description>
+    <description>Recent content on Alberto Trigo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
+    <managingEditor>trigo@inventati.org (Alberto Trigo Medina)</managingEditor>
+    <webMaster>trigo@inventati.org (Alberto Trigo Medina)</webMaster>
+    <copyright>Alberto Trigo (CC BY 4.0)</copyright>
     <lastBuildDate>Tue, 02 Apr 2024 19:41:22 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>trigo@inventati.org (Alberto Trigo Medina)</author>
       <guid>http://localhost:1313/about/</guid>
       <description>Introduction As obvious as it may be, this page aims to describe a few superficial things about myself. I may be referred to as Alberto, I was born in Málaga, Spain, though I identify myself more as an European rather than a Spaniard. That may be a factor in my decision to move to Poland, where I have been living since September, 2022. My main interests are physics, mathematics, science, rationality, and English.</description>
       <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
@@ -32,28 +35,37 @@
 </ul>
 <h2 id="software">Software</h2>
 <ul>
-<li>OS: GNU/Linux EndeavourOS</li>
-<li>Environment: KDE Plasma</li>
+<li>OS: Arch Linux</li>
+<li>Environment: GNOME</li>
 <li>Mail Client: Thunderbird</li>
 <li>Browser: Firefox &amp; Ungoogled Chromium</li>
-<li>Text Editor: Neovim &amp; VSCodium</li>
+<li>Text Editor: Neovim(lazy) &amp; VSCodium</li>
 </ul>
 ]]></content:encoded>
     </item>
     <item>
       <title>Electric field inside a sphere</title>
       <link>http://localhost:1313/blog/problem2_15/</link>
-      <pubDate>Tue, 02 Apr 2024 19:41:22 +0200</pubDate>
+      <pubDate>Tue, 02 Apr 2024 19:41:22 +0200</pubDate><author>trigo@inventati.org (Alberto Trigo Medina)</author>
       <guid>http://localhost:1313/blog/problem2_15/</guid>
-      <description>Problem : Find the electric field inside a sphere that carries a charge density proportional to the distance from the center, $$ρ = kr$$, for some constant $$ k $$.</description>
-      <content:encoded><![CDATA[<p>Problem : Find the electric field inside a sphere that carries a charge density proportional
-to the distance from the center, $$ρ = kr$$, for some constant $$ k $$.</p>
+      <description>Problem : A thick spherical shell carries charge density: $$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$ Find the electric field in the following three regions: $$(i)\ r &amp;lt; a \quad (ii)\ a &amp;lt; r &amp;lt; b \quad (iii)\ r &amp;gt; b$$&#xA;Solution: It is the case that a spherical surface is symmetrical on any axis, therefore Gauss&amp;rsquo; law will be used. $$\oint_{S} \vec{E}\cdot d\vec{a}=\frac{Q_{\mathrm{enc}}}{\varepsilon_0}$$&#xA;$(i)$ The density in this part of the sphere is $0$, therefore $Q_{\mathrm{enc}} = 0$ and the electric field $\vec{E} = 0$</description>
+      <content:encoded><![CDATA[<p>Problem : A thick spherical shell carries charge density: $$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$ Find the electric field in the following three regions: $$(i)\ r &lt; a \quad (ii)\ a &lt; r &lt; b \quad (iii)\ r &gt; b$$</p>
+<p>Solution: It is the case that a spherical surface is symmetrical on any axis, therefore Gauss&rsquo; law will be used. $$\oint_{S} \vec{E}\cdot d\vec{a}=\frac{Q_{\mathrm{enc}}}{\varepsilon_0}$$</p>
+<p>$(i)$ The density in this part of the sphere is $0$, therefore $Q_{\mathrm{enc}} = 0$ and the electric field $\vec{E} = 0$</p>
+<p>$(ii)$ In this case, the only part that contributes to the electric field is the volume in the section $ (a &lt; r &lt; b) $. The dot product of the electric field vector with the surface vector is parallel and constant over the whole surface, therefore it can be rewritten as $$ \oint_{S} |{E}|\ d\vec{a} = |E| \oint_{S} d\vec{a} = |E|4\pi r^2$$</p>
+<p>As for the total enclosed charge, it is obvious that $ \mathrm{d}q = \rho\ \mathrm{d}\tau$ and therefore $$ Q_{\mathrm{enc}} = \frac{1}{\epsilon_{0}} \int \rho\ \mathrm{d} \tau $$</p>
+<p>Let us define the $ \mathrm{d}\tau $ factor in spherical coordinates as $$ d\tau = r^2 \sin {\theta}\ dr\ d\phi\ d\theta $$</p>
+<p>Then $$ Q_{\mathrm{enc}} =  \int_{a}^{r} \frac{k}{r^2}\ r^2 \sin {\theta}\ dr\ d\phi\ d\theta = 4\pi k \int_{a}^{r} dr = 4\pi k  (r - a) \hat{r} $$</p>
+<p>And the resulting equations is:</p>
+<p>$$ |E|4\pi r^2 =  \frac{4\pi k}{\epsilon_{0}}  (r - a) \hat{r} $$</p>
+<p>Which simplifies to:</p>
+<p>$$ \vec{E}= \frac{k}{\epsilon_{0}} \left(\frac{r-a}{r^2}\right) \hat{r}.  \qquad \square$$</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>First</title>
       <link>http://localhost:1313/blog/first/</link>
-      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><author>trigo@inventati.org (Alberto Trigo Medina)</author>
       <guid>http://localhost:1313/blog/first/</guid>
       <description>As expected from my previous endeavors, I find myself reluctant to write this first post. In part, this reluctance stems from my awareness that I am not in the mindset for careful and deliberate writing. However, upon further introspection, I realize a stronger correlation to the feeling of self-judgment regarding my writing skills. In any case, my aim for these posts was not to provide the reader with exceptional value, but simply to hold myself accountable.</description>
       <content:encoded><![CDATA[<p>As expected from my previous endeavors, I find myself reluctant to write this first post. In part, this reluctance stems from my awareness that I am not in the mindset for careful and deliberate writing. However, upon further introspection, I realize a stronger correlation to the feeling of self-judgment regarding my writing skills. In any case, my aim for these posts was not to provide the reader with exceptional value, but simply to hold myself accountable.</p>

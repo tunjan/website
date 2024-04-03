@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Tunjan</title>
+    <title>Tags on Alberto Trigo</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Tunjan</description>
+    <description>Recent content in Tags on Alberto Trigo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
+    <managingEditor>trigo@inventati.org (Alberto Trigo Medina)</managingEditor>
+    <webMaster>trigo@inventati.org (Alberto Trigo Medina)</webMaster>
+    <copyright>Alberto Trigo (CC BY 4.0)</copyright>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

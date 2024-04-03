@@ -27,8 +27,8 @@ My knowledge is currently being expanded in the following areas:
 
 ## Software
 
-- OS: GNU/Linux EndeavourOS
-- Environment: KDE Plasma
+- OS: Arch Linux
+- Environment: GNOME
 - Mail Client: Thunderbird
 - Browser: Firefox & Ungoogled Chromium
-- Text Editor: Neovim & VSCodium
+- Text Editor: Neovim(lazy) & VSCodium

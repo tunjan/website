@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('fonts/IBMRoman.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 800;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('fonts/IBMItalic.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: italic;
+}
+
 :root {
   font-size: 62.5%; /* 10px */
   --color-dark: #FAF9F6;

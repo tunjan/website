@@ -2,8 +2,7 @@
 author = "Alberto Trigo"
 title = 'Electric field inside a sphere'
 date = 2024-04-02T19:41:22+02:00
-draft = false
-katex = true
+draft = true
 +++
 
 Problem : A thick spherical shell carries charge density: $$\rho = \frac{k}{r^2} \quad (a \le r \le b)$$ Find the electric field in the following three regions: $$(i)\ r < a \quad (ii)\ a < r < b \quad (iii)\ r > b$$

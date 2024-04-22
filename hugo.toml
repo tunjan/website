@@ -5,69 +5,66 @@ defaultContentLanguage = "en"
 enableRobotsTXT = false
 
 
-
 [languages]
-  [languages.en]
-    title = "Alberto Trigo"
-    languageName = "en-US"
-    LanguageCode = "en-US"
-    contentDir = "content"
-    [languages.en.params]
-      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+[languages.en]
+title = "Alberto Trigo"
+languageName = "en-US"
+LanguageCode = "en-US"
+contentDir = "content"
+[languages.en.params]
+madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
-  # The description of your website
-  description = "Tunjan Website"
+# The description of your website
+description = "Alberto Trigo's Website"
 
-  # The path to your favicon
-  favicon = "images/favicon.png"
+# The path to your favicon
+favicon = "images/favicon.png"
 
-  math = true
-  # These images will show up when services want to generate a preview of a link
-  # to your site. Ignored if `generateSocialCard = true`. For more information
-  # about previews, see https://gohugo.io/templates/internal#twitter-cards and
-  # https://gohugo.io/templates/internal#open-graph
-  images = ["images/share.webp"]
+math = true
+# These images will show up when services want to generate a preview of a link
+# to your site. Ignored if `generateSocialCard = true`. For more information
+# about previews, see https://gohugo.io/templates/internal#twitter-cards and
+# https://gohugo.io/templates/internal#open-graph
+images = ["images/share.webp"]
 
-  # This title is used as the site_name on the Hugo's internal opengraph
-  # structured data template
-  title = "Alberto Trigo"
+# This title is used as the site_name on the Hugo's internal opengraph
+# structured data template
+title = "Alberto Trigo"
 
-  # Dates are displayed following the format below. For more information about
-  # formatting, see https://gohugo.io/functions/format/
-  dateFormat = "02-01-2006"
+# Dates are displayed following the format below. For more information about
+# formatting, see https://gohugo.io/functions/format/
+dateFormat = "02-01-2006"
 
-  # If your blog is multilingual but you haven't translated a page, this theme
-  # will create a disabled link. By setting `hideUntranslated` to true, you can
-  # have the theme simply not show any link
-  hideUntranslated = false
+# If your blog is multilingual but you haven't translated a page, this theme
+# will create a disabled link. By setting `hideUntranslated` to true, you can
+# have the theme simply not show any link
+hideUntranslated = false
 
-  # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
-  # "herman". The former is what you see on Bear Cub's demo (an optimized
-  # version of Hugo Bear Blog), while the latter has a more modern look based on
-  # Herman Martinus's version of the Blogster Minimal theme for Astro.
-  themeStyle = "herman"
+# (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
+# "herman". The former is what you see on Bear Cub's demo (an optimized
+# version of Hugo Bear Blog), while the latter has a more modern look based on
+# Herman Martinus's version of the Blogster Minimal theme for Astro.
+themeStyle = "herman"
 
-  # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
-  # for posts that don't have `images` defined in their front matter; By setting
-  # `geneateSocialCard` to false, you an prevent this behavior. For more
-  # information see layouts/partials/social_card.html
-  generateSocialCard = false
+# (EXPERIMENTAL) This theme is capable of dynamically generating social cards
+# for posts that don't have `images` defined in their front matter; By setting
+# `geneateSocialCard` to false, you an prevent this behavior. For more
+# information see layouts/partials/social_card.html
+generateSocialCard = false
 
-  [params.author]
-    name = "Alberto Trigo Medina" # Your name as shown in the RSS feed metadata
-    email = "trigo@inventati.org"
-
+[params.author]
+name = "Alberto Trigo Medina" # Your name as shown in the RSS feed metadata
+email = "trigo@inventati.org"
 
 
 [markup]
-  [markup.highlight]
-    noClasses = false 
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
-        enable = true
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)']]
-
+[markup.highlight]
+noClasses = false
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]

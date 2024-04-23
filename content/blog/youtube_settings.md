@@ -5,6 +5,9 @@ author = 'Alberto Trigo'
 title = 'Youtube Settings'
 +++
 
+I use [ImprovedTube](https://improvedtube.com/) to cleanup the user interface of Youtube.
+This is the code in my config file.
+
 {{< highlight json >}}
 {
    "below_player_loop":false,

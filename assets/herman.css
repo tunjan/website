@@ -83,7 +83,6 @@ main {
   box-shadow: 0.45rem 0.45rem rgba(0, 0, 0, 0.4);
   border: 2px solid black;
   position: relative;
-  text-shadow: -2px -2px 0 var(--theme-color-light), 2px -2px 0 var(--theme-color-light), -2px 2px 0 var(--theme-color-light), 2px 2px 0 var(--theme-color-light);
   background: var(--theme-color-light);
 }
 
@@ -104,7 +103,7 @@ body::before {
   color: var(--theme-color-light);
   text-shadow: 2px 0 #444, -2px 0 #444, 0 2px #444, 0 -2px #444,
     1px 1px #444, -1px -1px #444, 1px -1px #444, -1px 1px #444;
-
+  font-family: "Space Mono";
 }
 
 .title:hover,
@@ -142,6 +141,7 @@ nav a {
   font-weight: bold;
   margin-right: var(--spacing-base);
   color: var(--theme-color-light);
+
 }
 
 nav a:hover,
@@ -163,6 +163,7 @@ footer {
   text-align: center;
   opacity: 0.75;
   padding-top: var(--spacing-large);
+  text-shadow: -2px -2px 0 var(--theme-color-light), 2px -2px 0 var(--theme-color-light), -2px 2px 0 var(--theme-color-light), 2px 2px 0 var(--theme-color-light);
 }
 
 
@@ -172,7 +173,14 @@ ol {
   padding-inline-start: var(--spacing-large);
 }
 
-li {}
+li {
+  margin: 1rem 0;
+  border: 2px solid black;
+  padding: var(--spacing-small) var(--spacing-base);
+  box-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.4);
+  border: 2px solid black;
+  background: var(--theme-color-light);
+}
 
 blockquote {
   padding-inline-start: var(--spacing-base);
@@ -196,7 +204,7 @@ blockquote {
 
 .title h1 {
   font-size: calc(var(--font-size-base) * 2);
-  margin-top: var(--spacing-small);
+  margin: var(--spacing-small) 0;
 }
 
 ul.blog-posts {

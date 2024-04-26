@@ -146,7 +146,9 @@ nav a {
   padding: 0.2ch 1ch;
   box-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.4);
   background-color:var(--theme-color-light);
-  transition: 0.2s ease-out; 
+  transition: 0.2s ease-out;
+  display: inline-block;
+  margin-top: var(--spacing-small);
 }
 
 

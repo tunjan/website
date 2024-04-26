@@ -296,9 +296,4 @@ figcaption>p {
 
 @media screen and (max-width: 600px) {
 
-  header,
-  main,
-  footer {
-    padding: var(--spacing-small);
-  }
 }

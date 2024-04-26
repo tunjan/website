@@ -44,6 +44,9 @@ body {
 
 a {
   text-decoration: none;
+  color: rgb(68,68,68, 0.9);
+  font-weight: 500;
+  border-radius: .25ch;
 }
 
 body {
@@ -112,17 +115,12 @@ body::before {
   text-shadow: none;
 }
 
-main a,
-footer a {
-  color: var(--theme-color-primary);
-  font-style: italic;
-  transition: color 0.15s ease-in-out;
-}
-
-
-main a:hover,
-main a:focus {
-  color: var(--theme-color-dark);
+p a{
+  color: rgb(68,68,68, 0.9);
+  font-weight: 500;
+  background-color: rgb(234,235,236);
+  padding: 0 .1ch;
+  border-radius: .25ch;
 }
 
 a,

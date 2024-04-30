@@ -16,7 +16,7 @@ madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
 # The description of your website
-description = "Alberto Trigo's Website"
+description = ""
 
 # The path to your favicon
 favicon = "images/favicon.png"
@@ -30,7 +30,7 @@ images = ["images/share.webp"]
 
 # This title is used as the site_name on the Hugo's internal opengraph
 # structured data template
-title = "Alberto Trigo"
+title = "ALBERTO TRIGO"
 
 # Dates are displayed following the format below. For more information about
 # formatting, see https://gohugo.io/functions/format/

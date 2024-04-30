@@ -19,8 +19,8 @@
   --theme-color-dark: #444;
   --theme-color-primary: #40826d;
 
-  --theme-font-primary: "IBM Plex Sans", sans-serif;
-  --theme-font-monospace: "IBM Plex Mono", monospace;
+  --theme-font-primary: "Fira Sans", "IBM Plex Sans", sans-serif;
+  --theme-font-monospace: "Fira Code", "IBM Plex Mono", monospace;
 
   --font-size-base: 1.2rem;
   --line-height-base: 1.5;
@@ -69,7 +69,7 @@ header {
   border: 2px solid black;
   padding: var(--spacing-large);
   box-shadow: 0.45rem 0.45rem rgba(0, 0, 0, 0.4);
-  background-color: #4f9cff;
+  background-color: #ffd179;
   color: var(--theme-color-light);
   
 }
@@ -100,20 +100,6 @@ body::before {
   background-size: 1.5rem 1.5rem;
   z-index: -1;
   opacity: 0.25;
-}
-
-.title {
-  color: var(--theme-color-light);
-  text-shadow: 2px 0 #444, -2px 0 #444, 0 2px #444, 0 -2px #444,
-    1px 1px #444, -1px -1px #444, 1px -1px #444, -1px 1px #444;
-  font-family: "Space Mono";
-
-}
-
-.title:hover,
-.title:focus {
-  color: var(--theme-color-dark);
-  text-shadow: none;
 }
 
 p a{

@@ -15,12 +15,25 @@
 }
 
 :root {
-  --theme-color-light: #f8f8f8;
-  --theme-color-dark: #444;
-  --theme-color-primary: #40826d;
 
-  --theme-font-primary: "Fira Sans", "IBM Plex Sans", sans-serif;
-  --theme-font-monospace: "Fira Code", "IBM Plex Mono", monospace;
+	--rp-dawn-base: 250, 244, 237;
+	--rp-dawn-surface: 255, 250, 243;
+	--rp-dawn-overlay: 242, 233, 222;
+	--rp-dawn-muted: 152, 147, 165;
+	--rp-dawn-subtle: 121, 117, 147;
+	--rp-dawn-text: 87, 82, 121;
+	--rp-dawn-love: 180, 99, 122;
+	--rp-dawn-gold: 234, 157, 52;
+	--rp-dawn-rose: 215, 130, 126;
+	--rp-dawn-pine: 40, 105, 131;
+	--rp-dawn-foam: 86, 148, 159;
+	--rp-dawn-iris: 144, 122, 169;
+	--rp-dawn-highlight-low: 244, 237, 232;
+	--rp-dawn-highlight-med: 223, 218, 217;
+	--rp-dawn-highlight-high: 206, 202, 205;
+
+  --font-primary: "Fira Sans", "IBM Plex Sans", sans-serif;
+  --font-monospace: "Fira Code", "IBM Plex Mono", monospace;
 
   --font-size-base: 1.2rem;
   --line-height-base: 1.5;
@@ -44,17 +57,17 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(68,68,68, 0.9);
   font-weight: 500;
+  color: rgb(var(--rp-dawn-text));
 }
 
 body {
   padding: var(--spacing-large);
-  font-family: var(--theme-font-primary);
+  font-family: var(--font-primary);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  color: var(--theme-color-dark);
-  background: var(--theme-color-light);
+  color: rgb(var(--rp-dawn-text));
+  background: rgb(var(--rp-dawn-base));
 
 }
 
@@ -66,12 +79,12 @@ footer {
 }
 
 header {
-  border: 2px solid black;
   padding: var(--spacing-large);
-  box-shadow: 0.45rem 0.45rem rgba(0, 0, 0, 0.4);
-  background-color: #ffd179;
-  color: var(--theme-color-light);
-  
+  border-radius: .45rem;
+  color: rgb(var(--rp-dawn-text));
+  background: rgb(var(--rp-dawn-surface));
+  border: 1px solid rgb(var(--rp-dawn-muted) , 20%);
+
 }
 
 a.blog-tags {
@@ -81,12 +94,12 @@ a.blog-tags {
 
 main {
   margin-top: 1rem;
-  border: 2px solid black;
   padding: var(--spacing-small) var(--spacing-large);
-  box-shadow: 0.45rem 0.45rem rgba(0, 0, 0, 0.4);
-  border: 2px solid black;
   position: relative;
-  background: var(--theme-color-light);
+  border-radius: .35rem;
+  border: 1px solid rgb(var(--rp-dawn-muted) , 20%);
+  background-color: #fffaf3;
+
 }
 
 body::before {
@@ -96,17 +109,14 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle at center, black .75px, transparent 1px);
-  background-size: 1.5rem 1.5rem;
   z-index: -1;
   opacity: 0.25;
 }
 
 p a{
-  color: rgb(68,68,68, 0.9);
-  font-weight: 500;
-  background-color: rgb(234,235,236);
-  padding: 0 .1ch;
+  background-color: rgb(var(--rp-dawn-highlight-low));
+  padding: .0.15rem;
+  border-radius: .25rem;
 }
 
 a,
@@ -125,16 +135,14 @@ margin-top: var(--spacing-base);
 }
 
 nav a {
-  font-weight: 500;
   margin-right: var(--spacing-base);
-  color: #444;
-  border: 2px solid black;
   padding: 0.2ch 1ch;
-  box-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.4);
-  background-color:var(--theme-color-light);
   transition: 0.2s ease-out;
   display: inline-block;
   margin-top: var(--spacing-small);
+  border-radius: .375rem;
+  border: 1px solid rgb(var(--rp-dawn-foam), 20%);
+  background-color: rgb(var(--rp-dawn-foam), 10%);
 }
 
 
@@ -148,7 +156,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  border: 2px solid black;
+  border: 2px solid rgb(var(--rp-dawn-muted), 20%);
+  border-radius: 0.25rem;
+
 }
 
 main {
@@ -159,7 +169,6 @@ footer {
   text-align: center;
   opacity: 0.75;
   padding-top: var(--spacing-large);
-  text-shadow: -2px -2px 0 var(--theme-color-light), 2px -2px 0 var(--theme-color-light), -2px 2px 0 var(--theme-color-light), 2px 2px 0 var(--theme-color-light);
 }
 
 
@@ -171,10 +180,7 @@ ol {
 
 li {
   margin: 1rem 0;
-  border: 2px solid black;
   padding: var(--spacing-small) var(--spacing-base);
-  box-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.4);
-  border: 2px solid black;
   background: var(--theme-color-light);
 }
 
@@ -201,7 +207,9 @@ blockquote {
 .title h1 {
   font-size: calc(var(--font-size-base) * 2);
   margin: var(--spacing-small) 0;
-
+  /*background-color: var(--theme-color-light);*/
+  display: inline-block;
+  color: var(--theme-color-dark);
 }
 
 ul.blog-posts {

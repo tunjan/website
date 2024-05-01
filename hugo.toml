@@ -54,7 +54,7 @@ themeStyle = "herman"
 generateSocialCard = false
 
 [params.author]
-name = "Alberto Trigo Medina" # Your name as shown in the RSS feed metadata
+name = "Alberto Trigo" # Your name as shown in the RSS feed metadata
 email = "trigo@inventati.org"
 
 

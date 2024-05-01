@@ -231,11 +231,11 @@ p.byline {
 }
 
 code {
-  font-family: var(--theme-font-monospace);
-  background-color: #faf9f6;
-  font-size: calc(var(--theme-font-size-base) * 0.85);
+  font-family: var(--font-monospace);
+  background-color: rgb(var(--rp-dawn-surface));
+  font-size: calc(var(--font-size-base) * 0.8);
   padding: 2px var(--spacing-small);
-  font-size: 1rem;
+  border: 1px solid rgb(var(--rp-dawn-muted), 20%);
 }
 
 pre code {
